@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar'
-import MainBody from './components/MainBody/MainBody'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+
 
 function App() {
   return (
@@ -8,8 +9,13 @@ function App() {
       <header className="">
         <NavBar />
       </header>
-      <main>
-        <MainBody />
+      <main className='container-fluid'>
+         <h2 className='TitleIndex text-light py-5 fs-1'>Destacados</h2>
+         <div className='row justify-content-around'>
+          <ItemListContainer />
+          <ItemListContainer />
+          <ItemListContainer />
+          </div>
       </main>
     </div>
   );

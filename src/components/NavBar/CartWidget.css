@@ -1,0 +1,12 @@
+a svg{
+
+    width: 40px;
+    height: auto;
+}
+
+a svg:hover {
+
+    color: grey;
+    transition: 0.2s;
+
+}
