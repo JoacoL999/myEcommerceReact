@@ -10,13 +10,9 @@ function ItemListContainer() {
 </div>
 </div>
             
-    
-    
 
+</>
     
-    </>
-
-        
 
 }
 
