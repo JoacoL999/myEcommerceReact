@@ -27,8 +27,7 @@ function NavBar() {
                     <li className="nav-item">
                         <a className="nav-link text-light" href="#" tabIndex="-1" aria-disabled="true">Contacto</a>
                     </li>
-                    <li className="nav-item mx-3">
-                        <CartWidget />
+                    <li className="nav-item mx-3">  
                     </li>
                     </ul>
             </div>  
