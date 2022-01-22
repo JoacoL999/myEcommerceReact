@@ -17,14 +17,16 @@ function App() {
           Price='2100' 
           Descrip='Vive la misión legendaria de Aloy para desvelar los secretos de una futura Tierra dominada por máquinas. ¡Usa devastadores ataques contra tus depredadores y explora un majestuoso mundo abierto en este galardonado RPG de acción!' 
           Img={HZD} 
-          stock='5'/>
+          stock='5'
+          initial='1' />
           
           <ItemListContainer 
           Name='God Of War' 
           Price='2500' 
           Descrip='Vive la misión legendaria de Aloy para desvelar los secretos de una futura Tierra dominada por máquinas. ¡Usa devastadores ataques contra tus depredadores y explora un majestuoso mundo abierto en este galardonado RPG de acción!' 
           Img={GoWimg}
-          stock='10' />
+          stock='10'
+          initial='1' />
 
           </div>
       </main>

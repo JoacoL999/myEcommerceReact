@@ -29,7 +29,9 @@ function NavBar() {
                     </li>
                     <li className="nav-item mx-3">  
                     </li>
+                    <CartWidget />
                     </ul>
+                    
             </div>  
         </nav>
         </>
