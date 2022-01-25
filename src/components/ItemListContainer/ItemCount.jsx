@@ -35,7 +35,7 @@ const  [ Count, setCount] = useState(parseInt(initial));
 
 
   <ul className="share-icons mx-auto col-12 m-0 p-0" onClick={( ) => onAdd(ItemCount)}>
-  <li className="share-icons__item text-center m-0 p-0"><i className="text-black">Añadir al Carrito</i></li>
+  <li className="share-icons__item text-center m-0 mx-auto p-0"><i className="text-center  text-black">Añadir al Carrito</i></li>
   <li className="share-icons__block">
     <div className="share-icons__block-left"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="bi bi-cart-plus" viewBox="0 0 16 16">
   <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
