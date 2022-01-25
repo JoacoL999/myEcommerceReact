@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/myEcommerceReact/static/css/main.438e0976.css",
-    "main.js": "/myEcommerceReact/static/js/main.381f9b03.js",
+    "main.css": "/myEcommerceReact/static/css/main.320861c5.css",
+    "main.js": "/myEcommerceReact/static/js/main.503e2f54.js",
     "static/js/787.654abfd8.chunk.js": "/myEcommerceReact/static/js/787.654abfd8.chunk.js",
-    "static/media/GodOfWar.jpg": "/myEcommerceReact/static/media/GodOfWar.275c206ca4d91e71015d.jpg",
-    "static/media/HorizonZD.jpg": "/myEcommerceReact/static/media/HorizonZD.77837c8c81c491406701.jpg",
     "index.html": "/myEcommerceReact/index.html",
-    "main.438e0976.css.map": "/myEcommerceReact/static/css/main.438e0976.css.map",
-    "main.381f9b03.js.map": "/myEcommerceReact/static/js/main.381f9b03.js.map",
+    "main.320861c5.css.map": "/myEcommerceReact/static/css/main.320861c5.css.map",
+    "main.503e2f54.js.map": "/myEcommerceReact/static/js/main.503e2f54.js.map",
     "787.654abfd8.chunk.js.map": "/myEcommerceReact/static/js/787.654abfd8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.438e0976.css",
-    "static/js/main.381f9b03.js"
+    "static/css/main.320861c5.css",
+    "static/js/main.503e2f54.js"
   ]
 }
