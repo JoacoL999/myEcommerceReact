@@ -1,5 +1,7 @@
+import ItemCount from './../ItemListContainer/ItemCount'
 
-function Item({game}) {
+
+function ItemDetail(game) {
 
     return <>
     
@@ -9,7 +11,9 @@ function Item({game}) {
     <h5 className="card-title">{game.Name}</h5>
     <p className="card-text">{game.Descrip}</p>
     <div className='col-12'>
-    <a className="btn btn-primary" >Ver mas</a>
+        <h5>${game.Price}</h5>
+        <h4>Con impuestos: {game.price * 1.65}</h4>
+    <ItemCount stock='10' initial='1'/>
     
     </div>
     <div>
@@ -19,11 +23,12 @@ function Item({game}) {
 </div>
     
     
+    
+    
     </>
+
 
 
 }
 
-export default Item
-
-
+export default ItemDetail

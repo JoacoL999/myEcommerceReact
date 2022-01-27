@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./SnavBar.css";
 import logo from "./assets/steamlogo.png";
 import CartWidget from "./CartWidget";
@@ -6,26 +7,27 @@ import CartWidget from "./CartWidget";
 
 function NavBar() {
 
+
     return <>
 
         <nav className="navbar navbar-dark bg-dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="">
+                <Link className="navbar-brand" to='/'>
                     <img src={logo} alt="" className="logo"/>
                     for Argentina
-                </a>
+                </Link>
                 <ul className="nav mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <a className="nav-link active text-light" href="#" aria-current="page">Juegos</a>
+                        <Link className="nav-link active text-light" to='' aria-current="page">Juegos</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light" href="#">Impuestos</a>
+                        <Link className="nav-link text-light" to=''>Impuestos</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light" href="#">Guia</a>
+                        <Link className="nav-link text-light" to=''>Guia</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link text-light" href="#" tabIndex="-1" aria-disabled="true">Contacto</a>
+                        <Link className="nav-link text-light" to='' tabIndex="-1" aria-disabled="true">Contacto</Link>
                     </li>
                     <li className="nav-item mx-3">  
                     </li>

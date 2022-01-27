@@ -3,12 +3,13 @@ import games from './../../JSON/games'
 import './itemList.css'
 import Item from './../item/Item'
 
+
+
 const getGames = () => {
 
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
 
         setTimeout(() => resolve(games), 2000 );
-
 
 
     })
@@ -17,8 +18,10 @@ const getGames = () => {
 }
 
 
-function ItemList({items}){
+function ItemList({}){
 
+
+    
     const [games, setGames] = useState([]);
     const [load, setLoad] = useState(false);
     useEffect(() => {
@@ -34,16 +37,18 @@ function ItemList({items}){
 
     return <>
     
-        <div className='row justify-content-around'>
+        <div className='container-fluid row justify-content-around'>
 
             {load ? (
                 <div className="prx">
+                    <div className='prxhv'>
                 <div className="lds-dual-ring"></div>
+                </div>
                 </div>
             ) : (
 
                 games.map((game) => {
-                    return <Item key={game.id} game={game} />})
+                    return <Item key={game.id} game={game} />} )
 
             )}
 

@@ -11,7 +11,7 @@ const  [ Count, setCount] = useState(parseInt(initial));
 
   let addHandler  = () => setCount(Count + 1);
   let RemoveHandler = () => setCount(Count - 1);
-  if(Count <= 0) {
+  if(Count = 1) {
     RemoveHandler = () => setCount(1);
   }
 

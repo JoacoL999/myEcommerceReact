@@ -1,6 +1,8 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import Popular from './pages/Popular';
 
 
 
@@ -8,18 +10,17 @@ function App() {
 
 
   return (
-    <div className="App">
-      <header>
-        <NavBar />
-      </header>
-      <main className='container-fluid'>
-         <h2 className='TitleIndex text-light py-5 fs-1'>Destacados</h2>
-         <div className='row justify-content-evenly'>
-         <ItemListContainer />
-          </div>
-         
-      </main>
-    </div>
+      <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path='/'>
+          <Route index element={<Popular />} />
+
+          <Route path=":gameId" element={<ItemDetailContainer />} />
+
+        </Route>
+      </Routes>
+      </BrowserRouter>
   );
 }
 
