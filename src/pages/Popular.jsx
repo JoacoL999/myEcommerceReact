@@ -4,8 +4,8 @@ const Popular = () => {
 
     return <>
     
-    <div className='mx-auto text-center prx'>
-        <h1 className='text-center text-light py-5'>Destacados</h1>
+    <div className='mx-auto text-center bg-greyN'>
+        <h1 className='text-center text-dark py-5'>Destacados</h1>
         <ItemListContainer />
     </div>
     

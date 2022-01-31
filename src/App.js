@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import GameDetail from './pages/GameDetail';
 import NavBar from './components/NavBar/NavBar'
-import Popular from './pages/Popular';
+import HomePage from './pages/Popular';
+import GameList from './pages/GameList';
 
 
 
@@ -13,11 +14,13 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='/'>
-          <Route index element={<Popular />} />
-
-          <Route path=":gameId" element={<ItemDetailContainer />} />
-
+        <Route path='myEcommerceReact'>
+          <Route index element={<HomePage />} />
+          <Route path=":gameid" element={<GameDetail />} />
+        </Route>
+        <Route path='GameList'>
+          <Route index element={<GameList />}/>
+          <Route path=":gameid" element={<GameDetail />} />
         </Route>
       </Routes>
       </BrowserRouter>

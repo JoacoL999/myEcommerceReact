@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import games from './../../JSON/db'
-import './itemList.css'
+import './../itemList/ItemList'
 import Item from './../item/Item'
 
 
@@ -18,7 +18,7 @@ const getGames = () => {
 }
 
 
-function ItemList(){
+function LargeList(){
 
 
     
@@ -27,7 +27,7 @@ function ItemList(){
     useEffect(() => {
 
         setLoad(true)
-        fetch(`http://localhost:3001/games`,  { headers : { 
+        fetch(`http://localhost:3002/games`,  { headers : { 
             'Content-Type': 'application/json',
             'Accept': 'application/json'
            }})
@@ -66,5 +66,5 @@ function ItemList(){
 
 }
 
-export default ItemList
+export default LargeList
 

@@ -1,0 +1,66 @@
+{
+ "games":[
+
+    {
+    "id": "1593500",
+    "name": "God Of War",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1593500/header.jpg?t=1642526157",
+    "short_description": "Kratos ha dejado atrás su venganza contra los dioses del Olimpo y vive ahora como un hombre en los dominios de los dioses y monstruos nórdicos. En este mundo cruel e implacable debe luchar para sobrevivir… y enseñar a su hijo a hacerlo también.",
+    "price": 4199,
+    "stock": 10
+},
+
+{
+    "id": "1151640",
+    "name": "Horizon Zero Dawn",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1151640/header.jpg?t=1635442187",
+    "short_description": "Vive la misión legendaria de Aloy para desvelar los secretos de una futura Tierra dominada por máquinas. ¡Usa devastadores ataques contra tus depredadores y explora un majestuoso mundo abierto en este galardonado RPG de acción!",
+    "Price": 2100,
+    "Stock": 25
+
+},
+
+
+{
+    "id": "1446780",
+    "name": "Monster Hunter Rise",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1446780/header.jpg?t=1642465111",
+    "short_description": "¡Acepta el reto y apúntate a la caza! En Monster Hunter Rise, la entrega más reciente de la galardonada y superexitosa serie Monster Hunter, te convertirás en cazador, explorarás mapas nuevos y usarás muchas armas diferentes para acabar con monstruos temibles en una historia totalmente nueva. La versión para PC también incluye montones de optimizaciones visuales y de mejora del rendimiento adicionales.",
+    "Price": 3199,
+    "Stock": 3
+
+},
+
+
+{
+    "id": "534380",
+    "name": "Dying Light 2 Stay Human",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/534380/header.jpg?t=1642668242",
+    "short_description": "El virus ha ganado y la civilización ha vuelto a la Edad Oscura. La Ciudad, uno de los últimos asentamientos de la humanidad, está al borde del abismo. Con tu agilidad y tu maestría del combate, deberás sobrevivir y dar forma al mundo. Tus decisiones importan.",
+    "Price": 4123,
+    "Stock": 5
+
+},
+
+{
+    "id": "1174180",
+    "name": "Red Dead Redemption 2",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1174180/header.jpg?t=1618851907",
+    "short_description": "Con más de 175 premios al Juego del año y más de 250 valoraciones perfectas, Red Dead Redemption 2 es la épica historia de Arthur Morgan y la banda de Van der Linde, que huyen por toda América en el albor de una nueva era. También incluye acceso al mundo multijugador compartido de Red Dead Online.",
+    "Price": 4123,
+    "Stock": 40
+
+},
+
+{
+    "id": "1245620",
+    "name": "ELDEN RING",
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg?t=1641856252",
+    "short_description": "EL NUEVO JUEGO DE ROL Y ACCIÓN DE AMBIENTACIÓN FANTÁSTICA. Álzate, Sinluz, y que la gracia te guíe para abrazar el poder del Círculo de Elden y encumbrarte como señor del Círculo en las Tierras Intermedias.",
+    "Price": 3999,
+    "Stock": 4
+
+}
+
+]
+}

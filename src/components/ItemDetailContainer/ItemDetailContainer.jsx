@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom"
-import games from './../../JSON/games.json'
+
 import ItemDetail from './../ItemDetail/ItemDetail'
+import './../../global.css'
+
 
 
 
@@ -9,7 +11,7 @@ const getGames = () => {
 
     return new Promise((resolve) => {
 
-        setTimeout(() => resolve(games), 2000 );
+        setTimeout(() => resolve(), 2000 );
 
 
     })
@@ -18,37 +20,62 @@ const getGames = () => {
 }
 
 
-
 function ItemDetailContainer (){
 
-    const { gameId } = useParams();
-    const [game, setGame] = useState();
+
+    const { gameid } = useParams();
+    const [game, setGame] = useState([]);
     const [load, setLoad] = useState(false);
 
-    const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
+    
 
     useEffect(() => {
 
-        const selected = games.id;
+        const URL = `http://localhost:3002/games/${gameid}`
+        
         setLoad(true);
-        getGames();
-        fetch(selected)
-            .then((res) => res.json())
-            .then((data)=> setGame(data))
-            .finally(() => setLoad(false));
-    }, [gameId])
+        
+        fetch(URL,  { headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+           }})
+        .then((response) => response.json())
+        .then((data) => setGame(data))
+        .catch((error) => console.error(error))
+        getGames()
+        .finally(() => setLoad(false), );
+    }, [gameid])
 
-    if(setLoad || !game) return <p>cargando</p>;
+
+    function onAdd(onAdd) {
+
+
+
+
+    }
+
     return <>
-         
-         <ItemDetail key={game.id} game={game} />
     
-    </>
+        <div className='container-fluid row justify-content-around'>
 
-}
+            {load ? (
+                <div className="prx">
+                    <div className='prxhv d-flex align-items-center my-auto mx-auto justify-content-center'>
+                <div className="lds-dual-ring"></div>
+                </div>
+                </div>
+            ) : (
+                
+                   <ItemDetail key={game.id} game={game}/>
+
+
+
+
+            )}</div>
+            
+    
+    </>   
+                }
+
 
 export default ItemDetailContainer
