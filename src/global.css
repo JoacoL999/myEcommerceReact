@@ -5,6 +5,13 @@
 
 }
 
+.fixed-prx{
+
+  background: #474b4f;
+  height: 90.2vh;
+
+}
+
 .bg-nDark{
 
     background: #222629;
@@ -134,4 +141,48 @@
 }
 .learn-more:hover .button-text {
   color: #fff;
+}
+
+.bg-pay{
+
+  background-image: url('./components/TaxExample/ShaeVizla.png');
+  height: 52.35rem;
+  background-position-x: 50%;
+  background-position-y: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right: 2px solid #61892F;
+
+}
+
+.paymentP{
+
+  width: 50%;
+
+}
+
+.bg-cont{
+
+  background-image: url('./components/TaxExample/dvWP.jpg');
+  height: 52.35rem;
+  background-position-x: 50%;
+  background-position-y: 15%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right: 2px solid #61892F;
+
+
+}
+
+.bg-cart{
+
+  background-image: url('./components/TaxExample/rcWP.jpg');
+  height: 52.35rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right: 2px solid #61892F;
+
+
 }

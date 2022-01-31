@@ -18,17 +18,17 @@ function NavBar() {
                     for Argentina
                 </Link>
                 <ul className="nav mb-2 mb-lg-0">
-                    <li className="nav-item" to='AppList'>
+                    <li className="nav-item">
                         <Link className="nav-link active text-light" to='GameList'>Juegos</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-light" to=''>Impuestos</Link>
+                        <Link className="nav-link text-light" to='Tax'>Impuestos</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-light" to=''>Guia</Link>
+                        <Link className="nav-link text-light" to='Payment'>Guia</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-light" to='' tabIndex="-1" aria-disabled="true">Contacto</Link>
+                        <Link className="nav-link text-light" to='Contact'>Contacto</Link>
                     </li>
                     <li className="nav-item mx-3">  
                     </li>
