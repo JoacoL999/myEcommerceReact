@@ -13,7 +13,7 @@ function NavBar() {
 
         <nav className="navbar navbar-dark bg-nDark ">
             <div className="container-fluid">
-                <Link className="navbar-brand" to='myEcommerceReact'>
+                <Link className="navbar-brand" to='/'>
                     <img src={logo} alt="" className="logo"/>
                     for Argentina
                 </Link>

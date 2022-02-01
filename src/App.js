@@ -17,7 +17,7 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='myEcommerceReact'>
+        <Route path='/'>
           <Route index element={<HomePage />} />
           <Route path=":gameid" element={<GameDetail />} />
         </Route>
