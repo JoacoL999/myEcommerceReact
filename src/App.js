@@ -8,7 +8,7 @@ import Tax from './pages/Tax';
 import Payment from './pages/Payment';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
-
+import Genre from './pages/Genre';
 
 function App() {
 
@@ -23,6 +23,7 @@ function App() {
         </Route>
         <Route path='GameList'>
           <Route index element={<GameList />}/>
+          <Route path=":gameGenre" element={<Genre />} />
           <Route path=":gameid" element={<GameDetail />} />
         </Route>
         <Route path='Tax'>

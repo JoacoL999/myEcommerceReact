@@ -3,10 +3,15 @@ import "./SnavBar.css";
 import logo from "./assets/steamlogo.png";
 import CartWidget from "./CartWidget";
 import './../../global.css'
-
+import { useEffect, useState } from 'react'
 
 
 function NavBar() {
+
+    const [show, setShow] = useState(false);
+
+
+
 
 
     return <>
@@ -18,8 +23,18 @@ function NavBar() {
                     for Argentina
                 </Link>
                 <ul className="nav mb-2 mb-lg-0">
-                    <li className="nav-item">
-                        <Link className="nav-link active text-light" to='GameList'>Juegos</Link>
+                    <li className="nav-item ddd">
+                    <span className="nav-link dropdown-toggle text-light" onClick={()=>setShow(!show)}>
+                    Juegos
+                        </span>
+                        <ul className="dropdown-menu bg-dark text-light " style={show?{display:"block"}:{display:'none'}} aria-labelledby="navbarDropdown">
+                        <Link className="dropdown-item text-light" to='GameList'>Todos</Link>
+                        <li><hr className="dropdown-divider bg-greenL" /></li>
+                        <li><Link className="dropdown-item text-light"  to='GameList/Action'>Accion</Link></li>
+                        <li><Link className="dropdown-item text-light" to='GameList/Adventure'>Aventura</Link></li>
+                        <li><Link className="dropdown-item text-light" to='GameList/Rol'>Rol</Link></li>
+                        <li><Link className="dropdown-item text-light" to='GameList/Simulator'>Simuladores</Link></li>
+                    </ul>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link text-light" to='Tax'>Impuestos</Link>

@@ -556,7 +556,7 @@
         { "id": 29, "description": "Steam Trading Cards" },
         { "id": 23, "description": "Steam Cloud" }
       ],
-      "genres": [{ "id": "1", "description": "Action" }],
+      "genres": [{ "id": "1", "description": "Acción" }],
       "screenshots": [
         {
           "id": 0,
@@ -3668,7 +3668,7 @@
       "genres": [
         {
           "id": "1",
-          "description": "Action"
+          "description": "Acción"
         }
       ],
       "screenshots": [
@@ -4486,7 +4486,7 @@
       "genres": [
         {
           "id": "1",
-          "description": "Action"
+          "description": "Acción"
         },
         {
           "id": "23",
