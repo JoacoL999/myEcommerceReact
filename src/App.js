@@ -24,6 +24,7 @@ function App() {
         <Route path='GameList'>
           <Route index element={<GameList />}/>
           <Route path=":gameGenre" element={<Genre />} />
+          <Route path=":gameGenre/:gameid" element={<GameDetail />} />
           <Route path=":gameid" element={<GameDetail />} />
         </Route>
         <Route path='Tax'>

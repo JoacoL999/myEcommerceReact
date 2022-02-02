@@ -3,7 +3,7 @@ import "./SnavBar.css";
 import logo from "./assets/steamlogo.png";
 import CartWidget from "./CartWidget";
 import './../../global.css'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 
 function NavBar() {

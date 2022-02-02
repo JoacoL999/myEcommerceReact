@@ -21,7 +21,7 @@ const getGames = () => {
 }
 
 
-function LargeList(){
+function ItemDetailGenre(){
 
 
     const { gameGenre } = useParams();
@@ -96,5 +96,5 @@ function LargeList(){
 
 }
 
-export default LargeList
+export default ItemDetailGenre
 

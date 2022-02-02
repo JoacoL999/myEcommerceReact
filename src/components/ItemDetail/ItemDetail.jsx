@@ -10,6 +10,9 @@ import './../../global.css'
 function ItemDetail({game}) {
 
     const [current, setCurrent] = useState(0)
+    const [quantity, setQuantity] = useState(0)
+
+    console.log(quantity)
 
     if(game.screenshots){
 
