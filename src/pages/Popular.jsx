@@ -1,6 +1,9 @@
 import ItemListContainer from './../components/ItemListContainer/ItemListContainer'
 import './../global.css'
+
+
 const Popular = () => {
+
 
     return <>
     

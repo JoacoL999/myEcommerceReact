@@ -9,11 +9,13 @@ import Payment from './pages/Payment';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
 import Genre from './pages/Genre';
+import { CartProvider } from './context/cartContext'
 
 function App() {
 
 
   return (
+    <CartProvider>
       <BrowserRouter>
       <NavBar />
       <Routes>
@@ -23,9 +25,11 @@ function App() {
         </Route>
         <Route path='GameList'>
           <Route index element={<GameList />}/>
+          <Route path=":gameid" element={<GameDetail />} />
+        </Route>
+        <Route path='GameGenres'>
           <Route path=":gameGenre" element={<Genre />} />
           <Route path=":gameGenre/:gameid" element={<GameDetail />} />
-          <Route path=":gameid" element={<GameDetail />} />
         </Route>
         <Route path='Tax'>
           <Route index element={<Tax />}/>
@@ -41,6 +45,7 @@ function App() {
         </Route>
       </Routes>
       </BrowserRouter>
+      </CartProvider>
   );
 }
 

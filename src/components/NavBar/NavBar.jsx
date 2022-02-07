@@ -30,10 +30,10 @@ function NavBar() {
                         <ul className="dropdown-menu bg-dark text-light " style={show?{display:"block"}:{display:'none'}} aria-labelledby="navbarDropdown">
                         <Link className="dropdown-item text-light" to='GameList'>Todos</Link>
                         <li><hr className="dropdown-divider bg-greenL" /></li>
-                        <li><Link className="dropdown-item text-light"  to='GameList/Action'>Accion</Link></li>
-                        <li><Link className="dropdown-item text-light" to='GameList/Adventure'>Aventura</Link></li>
-                        <li><Link className="dropdown-item text-light" to='GameList/Rol'>Rol</Link></li>
-                        <li><Link className="dropdown-item text-light" to='GameList/Simulator'>Simuladores</Link></li>
+                        <li><Link className="dropdown-item text-light"  to='GameGenres/Action'>Accion</Link></li>
+                        <li><Link className="dropdown-item text-light" to='GameGenres/Adventure'>Aventura</Link></li>
+                        <li><Link className="dropdown-item text-light" to='GameGenres/Rol'>Rol</Link></li>
+                        <li><Link className="dropdown-item text-light" to='GameGenres/Simulator'>Simuladores</Link></li>
                     </ul>
                     </li>
                     <li className="nav-item">

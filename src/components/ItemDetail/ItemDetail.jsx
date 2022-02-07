@@ -3,6 +3,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft,  } from 'react-icons/fa'
 import ItemCount from './../ItemListContainer/ItemCount'
 import './imagedetail.css'
 import './../../global.css'
+import { useCart } from '../../context/cartContext'
 
 
 
@@ -10,12 +11,27 @@ function ItemDetail({game}) {
 
     const [current, setCurrent] = useState(0)
 
-    var value = 0;
+    const {cart, addItem} = useCart();
+ 
+    
     
     const onAdd = (Count) => { 
-        console.log(Count);  
-       value = Count;
-    
+
+        const checkin = cart.every(item => {
+
+            return item.item.id !== game.id
+
+        })
+
+        if(checkin){ 
+
+        addItem(game, Count);
+        } else {
+            
+        console.log(' ya estaba añadido')
+        }
+        
+
     }
     
 
@@ -41,8 +57,7 @@ function ItemDetail({game}) {
 
     }
 
-
-
+    
     return <>
     
     <div className='row mb-2'>

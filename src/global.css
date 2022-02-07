@@ -186,3 +186,33 @@
 
 
 }
+
+.img-purchase{
+
+  width: 12rem;
+
+
+}
+
+.scrollex{
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 74vh;
+
+
+}
+
+.delete{
+
+  cursor: pointer;
+
+
+}
+
+.delete:hover{
+
+  color: red;
+
+
+}

@@ -47,13 +47,6 @@ function ItemDetailContainer (){
     }, [gameid])
 
 
-    function onAdd(onAdd) {
-
-
-
-
-    }
-
     return <>
     
         <div className='container-fluid row justify-content-around'>
