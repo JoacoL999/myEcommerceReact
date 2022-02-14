@@ -18,29 +18,29 @@ function App() {
     <CartProvider>
       <BrowserRouter>
       <NavBar />
-      <Routes basename={process.env.PUBLIC_URL}>
-        <Route path={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path='/myEcommerceReact/'>
           <Route index element={<HomePage />} />
           <Route path=":gameid" element={<GameDetail />} />
         </Route>
-        <Route path={process.env.PUBLIC_URL + 'GameList'}>
+        <Route path='/myEcommerceReact/GameList'>
           <Route index element={<GameList />}/>
           <Route path=":gameid" element={<GameDetail />} />
         </Route>
-        <Route path={process.env.PUBLIC_URL + 'GameGenres'}>
+        <Route path='/myEcommerceReact/GameGenres'>
           <Route path=":gameGenre" element={<Genre />} />
           <Route path=":gameGenre/:gameid" element={<GameDetail />} />
         </Route>
-        <Route path={process.env.PUBLIC_URL +  'Tax'}>
+        <Route path='/myEcommerceReact/Tax'>
           <Route index element={<Tax />}/>
         </Route>
-        <Route path={process.env.PUBLIC_URL + '/Payment'}>
+        <Route path='/myEcommerceReact/Payment'>
           <Route index element={<Payment />} />
         </Route>
-        <Route path={process.env.PUBLIC_URL + 'Contact'}>
+        <Route path='/myEcommerceReact/Contact'>
           <Route index element={<Contact />} />
         </Route>
-        <Route path={process.env.PUBLIC_URL + 'Cart'}>
+        <Route path='/myEcommerceReact/Cart'>
           <Route index element={<Cart />} />
         </Route>
       </Routes>
