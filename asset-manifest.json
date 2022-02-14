@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c8beb78e.css",
-    "main.js": "/static/js/main.f2cd9f5f.js",
+    "main.js": "/static/js/main.48725e2f.js",
     "static/js/787.654abfd8.chunk.js": "/static/js/787.654abfd8.chunk.js",
     "static/media/kotorWP.jpg": "/static/media/kotorWP.5999f65fab83ac266df8.jpg",
     "static/media/ShaeVizla.png": "/static/media/ShaeVizla.9c2bf50e19ec76e44af5.png",
@@ -9,11 +9,11 @@
     "static/media/rcWP.jpg": "/static/media/rcWP.4bcefc733a8d0d3530ca.jpg",
     "index.html": "/index.html",
     "main.c8beb78e.css.map": "/static/css/main.c8beb78e.css.map",
-    "main.f2cd9f5f.js.map": "/static/js/main.f2cd9f5f.js.map",
+    "main.48725e2f.js.map": "/static/js/main.48725e2f.js.map",
     "787.654abfd8.chunk.js.map": "/static/js/787.654abfd8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c8beb78e.css",
-    "static/js/main.f2cd9f5f.js"
+    "static/js/main.48725e2f.js"
   ]
 }
