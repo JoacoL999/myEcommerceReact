@@ -19,28 +19,28 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='/myEcommerceReact'>
+        <Route path={process.env.PUBLIC_URL}>
           <Route index element={<HomePage />} />
           <Route path=":gameid" element={<GameDetail />} />
         </Route>
-        <Route path='/myEcommerceReact/GameList'>
+        <Route path={process.env.PUBLIC_URL + 'GameList'}>
           <Route index element={<GameList />}/>
           <Route path=":gameid" element={<GameDetail />} />
         </Route>
-        <Route path='/myEcommerceReact/GameGenres'>
+        <Route path={process.env.PUBLIC_URL + 'GameGenres'}>
           <Route path=":gameGenre" element={<Genre />} />
           <Route path=":gameGenre/:gameid" element={<GameDetail />} />
         </Route>
-        <Route path='/myEcommerceReact/Tax'>
+        <Route path={process.env.PUBLIC_URL +  'Tax'}>
           <Route index element={<Tax />}/>
         </Route>
-        <Route path='/myEcommerceReact/Payment'>
+        <Route path={process.env.PUBLIC_URL + '/Payment'}>
           <Route index element={<Payment />} />
         </Route>
-        <Route path='/myEcommerceReact/Contact'>
+        <Route path={process.env.PUBLIC_URL + 'Contact'}>
           <Route index element={<Contact />} />
         </Route>
-        <Route path='/myEcommerceReact/Cart'>
+        <Route path={process.env.PUBLIC_URL + 'Cart'}>
           <Route index element={<Cart />} />
         </Route>
       </Routes>
