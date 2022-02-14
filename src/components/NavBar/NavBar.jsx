@@ -18,7 +18,7 @@ function NavBar() {
 
         <nav className="navbar navbar-dark bg-nDark ">
             <div className="container-fluid">
-                <Link className="navbar-brand" to='/'>
+                <Link className="navbar-brand" to='/myEcommerceReact'>
                     <img src={logo} alt="" className="logo"/>
                     for Argentina
                 </Link>
@@ -30,20 +30,20 @@ function NavBar() {
                         <ul className="dropdown-menu bg-dark text-light " style={show?{display:"block"}:{display:'none'}} aria-labelledby="navbarDropdown">
                         <Link className="dropdown-item text-light" to='GameList'>Todos</Link>
                         <li><hr className="dropdown-divider bg-greenL" /></li>
-                        <li><Link className="dropdown-item text-light"  to='GameGenres/Action'>Accion</Link></li>
-                        <li><Link className="dropdown-item text-light" to='GameGenres/Adventure'>Aventura</Link></li>
-                        <li><Link className="dropdown-item text-light" to='GameGenres/Rol'>Rol</Link></li>
-                        <li><Link className="dropdown-item text-light" to='GameGenres/Simulator'>Simuladores</Link></li>
+                        <li><Link className="dropdown-item text-light"  to='myEcommerceReact/GameGenres/Action'>Accion</Link></li>
+                        <li><Link className="dropdown-item text-light" to='myEcommerceReact/GameGenres/Adventure'>Aventura</Link></li>
+                        <li><Link className="dropdown-item text-light" to='myEcommerceReact/GameGenres/Rol'>Rol</Link></li>
+                        <li><Link className="dropdown-item text-light" to='myEcommerceReact/GameGenres/Simulator'>Simuladores</Link></li>
                     </ul>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-light" to='Tax'>Impuestos</Link>
+                        <Link className="nav-link text-light" to='/myEcommerceReact/Tax'>Impuestos</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-light" to='Payment'>Guia</Link>
+                        <Link className="nav-link text-light" to='/myEcommerceReact/Payment'>Guia</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-light" to='Contact'>Contacto</Link>
+                        <Link className="nav-link text-light" to='/myEcommerceReact/Contact'>Contacto</Link>
                     </li>
                     <li className="nav-item mx-3">  
                     </li>
