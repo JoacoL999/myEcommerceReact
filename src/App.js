@@ -19,28 +19,28 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='/myEcommerceReact/'>
+        <Route path='/'>
           <Route index element={<HomePage />} />
           <Route path=":gameid" element={<GameDetail />} />
         </Route>
-        <Route path='/myEcommerceReact/GameList'>
+        <Route path='GameList'>
           <Route index element={<GameList />}/>
           <Route path=":gameid" element={<GameDetail />} />
         </Route>
-        <Route path='/myEcommerceReact/GameGenres'>
+        <Route path='GameGenres'>
           <Route path=":gameGenre" element={<Genre />} />
           <Route path=":gameGenre/:gameid" element={<GameDetail />} />
         </Route>
-        <Route path='/myEcommerceReact/Tax'>
+        <Route path='Tax'>
           <Route index element={<Tax />}/>
         </Route>
-        <Route path='/myEcommerceReact/Payment'>
+        <Route path='Payment'>
           <Route index element={<Payment />} />
         </Route>
-        <Route path='/myEcommerceReact/Contact'>
+        <Route path='Contact'>
           <Route index element={<Contact />} />
         </Route>
-        <Route path='/myEcommerceReact/Cart'>
+        <Route path='Cart'>
           <Route index element={<Cart />} />
         </Route>
       </Routes>
