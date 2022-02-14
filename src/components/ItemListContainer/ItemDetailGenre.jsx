@@ -1,25 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom"
-import games from './../../JSON/db'
 import './../itemList/ItemList'
 import Item from './../item/Item'
-
-
-const getGames = () => {
-
-    return new Promise((resolve) => {
-
-
-        setTimeout(() => resolve(games), 2000 );
-
-        
-
-
-    })
-
-
-}
-
+import { getFirestore } from '../../firebase';
 
 function ItemDetailGenre(){
 
@@ -31,18 +14,17 @@ function ItemDetailGenre(){
 
     useEffect(() => {
 
+        const db = getFirestore()
+        const productsCollection = db.collection('allgames')
+
         setLoad(true)
-        fetch(`http://localhost:3002/games`,  { headers : { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-           }})
-           .then ()
-        .then((response) => response.json())
-        .then((data) => setGames(data))
+         
+        productsCollection
+        .get()
+        .then((response) => setGames(response.docs.map(doc => ({...doc.data()}))))
         .catch((error) => console.error(error))
-        getGames()
-        
         .finally(() => setLoad(false));
+        
         
 
     },[gameGenre]);

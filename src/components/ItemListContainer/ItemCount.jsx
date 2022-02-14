@@ -35,8 +35,8 @@ const  [ Count, setCount] = useState(parseInt(initial));
   <button id="inc" className="btn fa fa-plus pull-right pb-4" onClick={addHandler}>+</button>
 </div>
           <div className='col-8 mx-auto mt-4'>
-              <Link className="cta" to='/Cart' onClick={ ( ) => onAdd(Count) }>
-                        <span className='cta-1'>NEXT</span>
+              <span className="cta" to='' onClick={ ( ) => onAdd(Count) }>
+                        <span className='cta-1'>Add</span>
                         <span className='cta-1'>
                             <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <g id="arrow" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
@@ -46,7 +46,7 @@ const  [ Count, setCount] = useState(parseInt(initial));
                             </g>
                             </svg>
                         </span> 
-                    </Link>                   
+                    </span>                   
 
 </div>
 

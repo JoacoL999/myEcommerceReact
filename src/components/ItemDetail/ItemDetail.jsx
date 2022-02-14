@@ -13,7 +13,11 @@ function ItemDetail({game}) {
 
     const {cart, addItem} = useCart();
  
-    
+    const checkin = cart.every(item => {
+
+        return item.item.id !== game.id
+
+    })
     
     const onAdd = (Count) => { 
 
@@ -29,10 +33,13 @@ function ItemDetail({game}) {
         } else {
             
         console.log(' ya estaba añadido')
+
         }
         
 
     }
+
+    
     
 
     if(game.screenshots){
@@ -150,8 +157,15 @@ function ItemDetail({game}) {
                     <div className='col-6'>
                     <h5 className=''>Stock: {game.stock}</h5>
                     </div>
-
+                    <div className='col-11 text-center mx-auto py-4'>
+                        {checkin ? (
+                            
                             <ItemCount stock={game.stock} initial='1' onAdd={onAdd}/>
+                        ) : (
+                            <h3 className='text-light py-4 detailExt bg-greyN'>Ya se ha añadido al carrito</h3>
+
+                        )}
+                       </div>
                     
                     <div className='col-12 row mt-4'>
                         <div className='col-6'>

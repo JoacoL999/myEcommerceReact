@@ -1,21 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import games from './../../JSON/db'
 import './../itemList/ItemList'
 import Item from './../item/Item'
+import { getFirestore } from '../../firebase';
 
-
-const getGames = () => {
-
-    return new Promise((resolve) => {
-
-
-        setTimeout(() => resolve(games), 2000 );
-
-
-    })
-
-
-}
 
 
 function LargeList(){
@@ -26,16 +13,17 @@ function LargeList(){
     const [load, setLoad] = useState(false);
     useEffect(() => {
 
+        const db = getFirestore()
+        const productsCollection = db.collection('allgames')
+
         setLoad(true)
-        fetch(`http://localhost:3002/games`,  { headers : { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-           }})
-        .then((response) => response.json())
-        .then((data) => setGames(data))
+        
+        productsCollection
+        .get()
+        .then((response) => setGames(response.docs.map(doc => ({...doc.data()}))))
         .catch((error) => console.error(error))
-        getGames()
         .finally(() => setLoad(false));
+        
         
 
 

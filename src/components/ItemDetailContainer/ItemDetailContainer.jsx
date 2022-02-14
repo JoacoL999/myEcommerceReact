@@ -1,23 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom"
-
 import ItemDetail from './../ItemDetail/ItemDetail'
 import './../../global.css'
+import { getFirestore } from '../../firebase';
 
 
-
-
-const getGames = () => {
-
-    return new Promise((resolve) => {
-
-        setTimeout(() => resolve(), 2000 );
-
-
-    })
-
-
-}
 
 
 function ItemDetailContainer (){
@@ -27,23 +14,20 @@ function ItemDetailContainer (){
     const [game, setGame] = useState([]);
     const [load, setLoad] = useState(false);
 
-    
 
     useEffect(() => {
 
-        const URL = `http://localhost:3002/games/${gameid}`
-        
+        const db = getFirestore()
+        const productsCollection = db.collection('allgames')
+      
         setLoad(true);
-        
-        fetch(URL,  { headers : { 
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-           }})
-        .then((response) => response.json())
-        .then((data) => setGame(data))
+        productsCollection
+        .get()
+        .then((response) => response?.docs.map(doc => ({...doc.data()})))
+        .then((data) => data.filter((pop) => pop.id === gameid))
+        .then((g) => setGame(...g)) 
         .catch((error) => console.error(error))
-        getGames()
-        .finally(() => setLoad(false), );
+        .finally(() => setLoad(false))
     }, [gameid])
 
 
