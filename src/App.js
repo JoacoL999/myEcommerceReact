@@ -18,7 +18,7 @@ function App() {
     <CartProvider>
       <BrowserRouter>
       <NavBar />
-      <Routes>
+      <Routes basename={process.env.PUBLIC_URL}>
         <Route path={process.env.PUBLIC_URL}>
           <Route index element={<HomePage />} />
           <Route path=":gameid" element={<GameDetail />} />
