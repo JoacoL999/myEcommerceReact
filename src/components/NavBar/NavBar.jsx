@@ -6,12 +6,13 @@ import './../../global.css'
 import { useState } from 'react'
 
 
+
 function NavBar() {
 
     const [show, setShow] = useState(false);
 
 
-
+ 
 
 
     return <>

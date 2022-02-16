@@ -203,6 +203,16 @@
 
 }
 
+.scrollex1{
+
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 90vh;
+
+
+
+}
+
 .delete{
 
   cursor: pointer;

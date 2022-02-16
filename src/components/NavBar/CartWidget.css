@@ -3,10 +3,41 @@
     width: 40px;
     height: auto;
 }
-sas
+
 .a svg:hover {
 
     color: grey;
     transition: 0.2s;
+
+}
+
+.counterItem{
+    position: absolute;
+    top: 15%;
+    right: 0.7%;
+    background-color: red;
+    border-radius: 50%;
+    width: 1.2%;
+    height: 25.9%;
+}
+
+.counter{
+
+    padding: 0;
+    font-size: 1.3rem;
+    text-align: center;
+
+
+}
+
+.cancel{
+
+    display: none;
+
+}
+
+.show{
+
+    display: block;
 
 }
