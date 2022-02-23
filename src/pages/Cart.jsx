@@ -5,10 +5,11 @@ import { getFirestore } from './../firebase/index'
 import { useState } from 'react';
 import firebase from "firebase/app";
 import * as React from 'react'
+import Swal from 'sweetalert2'
 
 
 const Cart = () => {
-    const {cart, removeHandler, cartPrice} = useCart();
+    const {cart, removeHandler, cartPrice, clear} = useCart();
     const [firstName, setName] = useState('')
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
@@ -28,6 +29,13 @@ const Cart = () => {
     
     if(!firstName || !phone || !email || !lastName){
 
+        Swal.fire({
+            title: 'Error!',
+            text: 'Porfavor complete el formulario!',
+            icon: 'error',
+            showConfirmButton: false,
+            timer: 1500
+          })
         console.log('Porfavor llene los datos')
         return false;
     }
@@ -49,6 +57,8 @@ const Cart = () => {
             navigate(`./finished/${res.id}`);
         })
         .catch((err) => console.log("hubo un error", err))
+        .finally(clear())
+
 
 }
 

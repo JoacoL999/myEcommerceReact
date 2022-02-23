@@ -163,6 +163,7 @@
       transition: 1s;
       box-shadow: 6px 6px 0 #474b4f;
       transform: skewX(-15deg);
+      cursor: pointer;
   }
   
   .cta:focus {
