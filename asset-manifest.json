@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d1973a4.css",
-    "main.js": "/static/js/main.57e5ba7a.js",
+    "main.css": "/static/css/main.0fe88e7b.css",
+    "main.js": "/static/js/main.f7b1dff5.js",
     "static/js/787.654abfd8.chunk.js": "/static/js/787.654abfd8.chunk.js",
     "static/media/kotorWP.jpg": "/static/media/kotorWP.5999f65fab83ac266df8.jpg",
     "static/media/ShaeVizla.png": "/static/media/ShaeVizla.9c2bf50e19ec76e44af5.png",
     "static/media/dvWP.jpg": "/static/media/dvWP.22cc66f022198f230688.jpg",
     "static/media/rcWP.jpg": "/static/media/rcWP.4bcefc733a8d0d3530ca.jpg",
     "index.html": "/index.html",
-    "main.1d1973a4.css.map": "/static/css/main.1d1973a4.css.map",
-    "main.57e5ba7a.js.map": "/static/js/main.57e5ba7a.js.map",
+    "main.0fe88e7b.css.map": "/static/css/main.0fe88e7b.css.map",
+    "main.f7b1dff5.js.map": "/static/js/main.f7b1dff5.js.map",
     "787.654abfd8.chunk.js.map": "/static/js/787.654abfd8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d1973a4.css",
-    "static/js/main.57e5ba7a.js"
+    "static/css/main.0fe88e7b.css",
+    "static/js/main.f7b1dff5.js"
   ]
 }
