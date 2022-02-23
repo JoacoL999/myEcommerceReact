@@ -12,7 +12,7 @@ URL Deploy : https://modest-yalow-f696c0.netlify.app/
 
 ## Web app React 'Sale of games'
 
-React project of fictional web of Steam Sale from Argentina
+React project of fictional web about Steam Sale from Argentina
 
 ##
 
