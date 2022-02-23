@@ -2,7 +2,22 @@
 
 Proyecto React pagina "FICTICIA" sobre venta de juegos Steam
 
-## React, Context, Bootstrap, Firebase
+## Herramienta usadas
+
+React, Context, Bootstrap, Firebase
 ## Uso de deploy en Netlify
 
-URL deploy : https://modest-yalow-f696c0.netlify.app/
+URL Deploy : https://modest-yalow-f696c0.netlify.app/
+
+
+## Web app React 'Sale of games'
+
+React project of fictional web of Steam Sale from Argentina
+
+##
+
+React, Context, Bootstrap, Firebase
+
+## Deployed in Netlify
+
+URL Deploy : https://modest-yalow-f696c0.netlify.app/
