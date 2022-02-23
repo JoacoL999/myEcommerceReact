@@ -1,9 +1,8 @@
 # Pagina React venta de juegos
 
-Proyecto Pagina react venta de juegos
+Proyecto React pagina "FICTICIA" sobre venta de juegos Steam
 
-## json-server 
+## React, Context, Bootstrap, Firebase
+## Uso de deploy en Netlify
 
-npm run server
-npm run server1
-
+URL deploy : https://modest-yalow-f696c0.netlify.app/
